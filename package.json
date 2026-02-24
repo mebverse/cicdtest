@@ -1,0 +1,27 @@
+{
+  "name": "cicdtest",
+  "version": "1.0.0",
+  "description": "Test repository for implementing and validating the GitHub Actions CI/CD deployment workflow from the [Divio blog](https://www.divio.com/blog/continuous-deployment-with-github-actions/)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mebverse/cicdtest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mebverse/cicdtest/issues"
+  },
+  "homepage": "https://github.com/mebverse/cicdtest#readme",
+  "dependencies": {
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
