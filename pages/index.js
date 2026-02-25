@@ -3,7 +3,7 @@ import React from 'react';
 const Home = () => (
   <div>
     <h1>Welcome to Next.js!</h1>
-    <p>This is to test the GitHub Actions CI/CD workflow, after deleting the template generated GitHub Action workflow files.</p>
+    <p>Test GitHub Actions CI/CD workflow, after removing the double quate from the header curl command.</p>
   </div>
 );
 
