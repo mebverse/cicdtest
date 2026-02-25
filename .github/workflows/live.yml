@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Reset Divio Test environment branch to main
-        run: curl -X PATCH --data "branch=main" --header "Authorization: Token ${{ secrets.API_TOKEN }}" https://api.divio.com/apps/v3/environments/${{ secrets.TEST_ENVIRONMENT_UUID }}/
+        run: curl -X PATCH --data 'branch=main' --header 'Authorization: Token ${{ secrets.API_TOKEN }}' https://api.divio.com/apps/v3/environments/${{ secrets.TEST_ENVIRONMENT_UUID }}/
 
       - name: Deploy live app
-        run: curl -X POST --data "environment=${{ secrets.LIVE_ENVIRONMENT_UUID }}" --header "Authorization: Token ${{ secrets.API_TOKEN }}" https://api.divio.com/apps/v3/deployments/
+        run: curl -X POST --data 'environment=${{ secrets.LIVE_ENVIRONMENT_UUID }}' --header 'Authorization: Token ${{ secrets.API_TOKEN }}' https://api.divio.com/apps/v3/deployments/
